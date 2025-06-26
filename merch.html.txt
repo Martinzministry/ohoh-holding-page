@@ -1,0 +1,8 @@
+<section>
+  <h2>OhOh Merchandise</h2>
+  <p>Coming soon! Sign up to get notified when T‑shirts and gear drop.</p>
+  <div class="card-grid">
+    <div class="card"><p>T‑shirt design 1 — safety slogan</p></div>
+    <div class="card"><p>T‑shirt design 2 — Jay Oh graphic</p></div>
+  </div>
+</section>
