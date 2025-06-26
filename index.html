@@ -3,45 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>OhOh – Health, Safety, and Media Innovation</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>OhOh – Coming Soon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fefce8;
+      color: #1f2937;
+      text-align: center;
+    }
+    header {
+      background-color: #facc15;
+      padding: 60px 20px 40px;
+    }
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+      font-style: italic;
+    }
+    .sections {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+    .box {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      max-width: 500px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .box h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #6b7280;
+      padding-bottom: 40px;
+    }
+    .signup input[type="email"] {
+      padding: 10px;
+      width: 60%;
+      max-width: 300px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .signup button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      background-color: #facc15;
+      border: none;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body>
 
-  <!-- Hero -->
-  <section class="bg-yellow-400 text-black py-20 px-6 text-center">
-    <h1 class="text-4xl md:text-6xl font-bold">OhOh</h1>
-    <p class="text-xl mt-4">Safety, Media, Innovation – All In One Place</p>
-    <p class="mt-2 text-sm italic">A new platform for inspections, awareness, and wellbeing.</p>
-  </section>
+  <header>
+    <h1>OhOh</h1>
+    <p>Safety, Media, Innovation – All In One Place</p>
+  </header>
 
-  <!-- App + Media Info -->
-  <section class="py-12 px-6 max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-    <!-- OhOh App -->
-    <div class="bg-white shadow-md rounded-lg p-6">
-      <h2 class="text-2xl font-bold mb-2">📋 OhOh App</h2>
-      <p class="text-gray-700">Our flagship Health & Safety Inspection app, built for construction, housing, and more. Photo capture, compliance scoring, and automated reports – all in your pocket.</p>
+  <div class="sections">
+    <div class="box">
+      <h2>📋 OhOh App</h2>
+      <p>Our flagship Health & Safety Inspection app, built for construction, housing, and more. Capture photos, score compliance, and generate reports – all in your pocket.</p>
     </div>
-    <!-- Oh Oh Media -->
-    <div class="bg-white shadow-md rounded-lg p-6">
-      <h2 class="text-2xl font-bold mb-2">📺 Oh Oh Media</h2>
-      <p class="text-gray-700">Children’s education, workshops, branded characters, and media to build a safety-first generation. From vlogs to animation – we're changing the message.</p>
+    <div class="box">
+      <h2>📺 Oh Oh Media</h2>
+      <p>Educational children’s content, vlogs, branded characters, and workshops — building a safety-first generation through storytelling and technology.</p>
     </div>
-  </section>
+  </div>
 
-  <!-- Signup CTA -->
-  <section class="bg-gray-200 py-12 px-6 text-center">
-    <h3 class="text-2xl font-semibold">Be the first to know when we launch</h3>
-    <p class="mb-6 text-gray-600">Get updates on the app, media content, and early-access tools.</p>
-    <form class="flex flex-col md:flex-row justify-center gap-4 max-w-md mx-auto">
-      <input type="email" placeholder="Enter your email" class="px-4 py-2 rounded border border-gray-300 w-full" />
-      <button class="bg-yellow-500 text-black font-semibold px-6 py-2 rounded hover:bg-yellow-600 transition">Notify Me</button>
-    </form>
-  </section>
+  <div class="signup">
+    <h2>🚀 Be the first to know when we launch</h2>
+    <p>Get updates on the app, videos, and early-access tools.</p>
+    <input type="email" placeholder="Enter your email" />
+    <br />
+    <button>Notify Me</button>
+  </div>
 
-  <!-- Footer -->
-  <footer class="text-center py-6 text-sm text-gray-600">
-    © 2025 OhOh Ltd. | <a href="mailto:info@ohoh.uk" class="underline">info@ohoh.uk</a>
+  <footer>
+    © 2025 OhOh Ltd. | Contact: <a href="mailto:info@ohoh.uk">info@ohoh.uk</a>
   </footer>
 
 </body>
