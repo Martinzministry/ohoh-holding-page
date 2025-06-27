@@ -1,0 +1,44 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8e1;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #fbc02d;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #333;
+}
+
+.container {
+  padding: 2em;
+}
+
+footer {
+  background-color: #fbc02d;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin: 1em 0.5em;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
