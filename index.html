@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OhOh – Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>OhOh</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">Meet Jay Oh</a>
+      <a href="apps.html">Apps</a>
+      <a href="media.html">Media</a>
+      <a href="merch.html">Merch</a>
+    </nav>
+  </header>
+  <div class="container">
+<!-- ─────  HOME HERO SECTION  ───── -->
+<section style="text-align:center; margin-top:2rem;">
+
+  <!-- Children Row -->
+  <div style="margin-bottom:3rem;">
+    <h2 style="font-size:2rem; margin-bottom:1rem;">Children Read &amp; Hear</h2>
+
+    <!-- Poster image acts as Play button -->
+    <img id="poster-children" src="assets/children-poster.png"
+         alt="Children poster" width="320"
+         style="cursor:pointer; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+    
+    <!-- Hidden video -->
+    <video id="video-children" width="320" controls style="display:none; border-radius:8px;">
+      <source src="assets/children.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+  <!-- Adults Row -->
+  <div style="margin-bottom:3rem;">
+    <h2 style="font-size:2rem; margin-bottom:1rem;">Adults Learn</h2>
+
+    <img id="poster-adults" src="assets/adults-poster.png"
+         alt="Adults poster" width="320"
+         style="cursor:pointer; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+
+    <video id="video-adults" width="320" controls style="display:none; border-radius:8px;">
+      <source src="assets/adults.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Apps Row -->
+  <div style="margin-bottom:3rem;">
+    <h2 style="font-size:2rem; margin-bottom:1rem;">Apps Protect</h2>
+
+    <img id="poster-apps" src="assets/apps-poster.png"
+         alt="Apps poster" width="320"
+         style="cursor:pointer; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.15);">
+
+    <video id="video-apps" width="320" controls style="display:none; border-radius:8px;">
+      <source src="assets/apps.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Navigation buttons (unchanged) -->
+  <div style="margin-top:1rem;">
+    <a href="about.html" class="btn">Meet Jay Oh</a>
+    <a href="apps.html"  class="btn">Discover Our Apps</a>
+    <a href="media.html" class="btn">Watch &amp; Learn</a>
+    <a href="merch.html" class="btn">Shop Merch</a>
+  </div>
+</section>
+
+<!-- Simple inline JS to swap poster → video -->
+<script>
+  const rows = ['children','adults','apps'];
+  rows.forEach(key => {
+    const poster = document.getElementById(`poster-${key}`);
+    const video  = document.getElementById(`video-${key}`);
+    poster.addEventListener('click', () => {
+      poster.style.display = 'none';
+      video.style.display  = 'inline-block';
+      video.play();
+    });
+  });
+</script>
+
+  </div>
+  <footer>
+    © 2025 OhOh Ltd. | <a href="mailto:info@ohoh.uk">info@ohoh.uk</a>
+  </footer>
+</body>
+</html>
